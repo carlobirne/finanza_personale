@@ -1,124 +1,38 @@
-**Episodio 01: The Bull - Il nostro viaggio insieme nella finanza personale**
+Il seguente è un riassunto delle puntate del podcast *The bull* in cui sono stati considerati i passaggi più significativi.
 
- **Introduzione al podcast**: "The Bull" è un podcast dedicato alla **pianificazione finanziaria personale**, con l'obiettivo di spiegare come massimizzare i risparmi, ridurre le spese, aumentare i guadagni, impostare una strategia di investimento solida ed efficiente e costruire ricchezza nel tempo.aggiunta
+## **Episodi 1-10**
 
-. Il podcast si propone di farlo in modo **semplice e realistico**, senza "pagliacciate da venditori".
+ **Introduzione al podcast**: "The Bull" è un podcast dedicato alla **pianificazione finanziaria personale**, con l'obiettivo di spiegare come massimizzare i risparmi, ridurre le spese, aumentare i guadagni, impostare una strategia di investimento solida ed efficiente e costruire ricchezza nel tempo. Il podcast si propone di farlo in modo semplice e realistico, senza "pagliacciate da venditori". Obiettivo: aiutare gli ascoltatori a uscire dalla "nebbia dell'ignoranza finanziaria che dilaga in Italia" e a impostare un percorso solido per far crescere la propria ricchezza
 
-    ◦ **Obiettivo principale**: Aiutare gli ascoltatori a uscire dalla "nebbia dell'ignoranza finanziaria che dilaga in Italia" e a impostare un percorso solido per far crescere la propria ricchezza
+Molti italiani lasciano i soldi sui conti correnti, comprano case indebitandosi eccessivamente, acquistano titoli di Stato o si affidano a consulenti bancari che propongono prodotti ad alto costo e basso rendimento. Nel 2022, oltre 150 miliardi di euro erano depositati sui conti correnti, pari a più della metà del PIL italiano. La ricchezza finanziaria complessiva degli italiani (esclusi gli immobili) si stima oltre i 5.000 miliardi di euro, ma una percentuale ridicola di questi soldi è investita in modo efficiente.
 
-. Il presentatore avverte che non sarà facile e richiede **costanza e pazienza**
+Per gli italiani, è **imprescindibile investire i propri soldi** a causa di diverse problematiche strutturali del paese
 
-.
+Problema n.1: **Le Pensioni**: La situazione delle pensioni in Italia è critica a causa di tre fattori principali: un grave calo demografico e l'invecchiamento della popolazione (più pensionati che lavoratori attivi), l'inevitabile aumento dell'età pensionabile, e un crescente gap previdenziale (la differenza tra reddito da lavoro e reddito da pensione). Quindi la pensione futura non sarà molto buona.
+Problema n.2: **L'Inflazione**: L'inflazione è la progressiva **svalutazione del potere d'acquisto del denaro** dovuta all'aumento dei prezzi di beni e servizi. Se non si trovano metodi per far crescere i risparmi almeno al di sopra del tasso di inflazione, si perdono soldi automaticamente. L'inflazione è una sorta di tassa occulta ineliminabile.
+Problema n.3: Il **Debito Pubblico**: Il debito pubblico italiano è il debito che lo Stato ha contratto verso investitori tramite l'emissione di obbligazioni. L'Italia ha un livello di indebitamento molto alto (145% del PIL), che grava sulle generazioni future e limita la crescita economica. Quando i tassi di interesse salgono (come fa la BCE per contrastare l'inflazione), l'Italia è costretta a pagare interessi più alti per finanziarsi
 
-    ◦ **Esperienza dell'autore**: Il conduttore ha dedicato la sua vita professionale al mondo del lavoro come Head Hunter e manager in multinazionali, e la sua vita extraprofessionale a studiare e applicare metodi per investire i risparmi
+Problema n.4: **Salari Stagnanti**: In Italia, i salari crescono poco e meno rispetto ad altri paesi del G7 o dell'Unione Europea, compromettendo la prosperità finanziaria
 
-. Ha notato che, mentre le persone si concentrano su come guadagnare di più, pochi in Italia comprendono l'importanza del risparmio e dell'investimento
+L'**interesse composto**: (vedi [[Educati e finanziati (P. Coletti)#Matematica finanziaria di base]])
+gli interessi guadagnati (rendimento) non vengono prelevati, ma vengono reinvestiti, e negli anni successivi, l'interesse si applica sulla somma iniziale più gli interessi maturati in precedenza. Questo porta a una crescita esponenziale del capitale nel lungo termine.
 
-.
+*Esempio*: Un investimento iniziale di €10.000 con un rendimento medio del 5% annuo, lasciato per 40 anni, può trasformarsi in oltre €70.000. Se si aggiungono €100 al mese, la somma totale investita (€10.000 iniziali + €48.000 aggiunti) può diventare oltre €226.000
+L'applicazione dell'interesse composto può portare a: crescita del patrimonio complessivo, integrazione della pensione, creazione di "generational wealth" (ricchezza generazionale), generazione di rendite passive costanti e raggiungimento dell'**indipendenza finanziaria**.
 
-    ◦ **Situazione finanziaria in Italia**: Si evidenzia una **scarsa cultura finanziaria** in Italia
+**Dove investire**: Si anticipa che il mercato finanziario è il più efficiente, liquido e con i rendimenti più alti e stabili nel lungo termine. Non si consiglia il trading o l'investimento in singole azioni/obbligazioni o derivati per il risparmiatore privato, ma si accenna ai **fondi indicizzati** e in particolare agli **ETF** (Exchange Traded Funds) come la soluzione più sensata per partecipare alla crescita del mercato azionario con bassi costi e rischi
 
-. Molti italiani lasciano i soldi sui conti correnti, comprano case indebitandosi eccessivamente, acquistano titoli di Stato o si affidano a consulenti bancari che propongono prodotti ad alto costo e basso rendimento. Nel 2022, oltre 150 miliardi di euro erano depositati sui conti correnti, pari a più della metà del PIL italiano. La ricchezza finanziaria complessiva degli italiani (esclusi gli immobili) si stima oltre i 5.000 miliardi di euro, ma una percentuale "ridicola" di questi soldi è investita in modo efficiente
+**Episodio 04: Le principali Asset Class - E perché non dovresti investire in nessuna di esse**
 
-.
+Un *asset* è qualunque cosa con un valore riconoscibile e misurabile in un mercato.
 
-    ◦ **Conflitto di interessi delle banche**: Si sottolinea che le banche e i consulenti bancari hanno un conflitto di interessi, in quanto il loro lavoro è vendere prodotti finanziari, spesso a scapito dell'interesse del cliente
+Le principali asset class includono denaro liquido, conti deposito, obbligazioni, azioni, materie prime, criptovalute e immobili. Il podcast si concentra sui mercati regolamentati, con brevi eccezioni per cripto e immobili.
 
-.
+Un principio da tenere a mente dice che: il rendimento atteso di un investimento è **direttamente proporzionale al suo grado di rischiosità**. Non esiste un investimento a "rischio zero" che prometta rendimenti, altrimenti è una truffa. L'obiettivo è costruire strategie di investimento allineate agli obiettivi personali e alla propensione al rischio
 
-    ◦ **Scopo del podcast**: Fornire strumenti, dati e informazioni fondamentali per permettere agli ascoltatori di fare le proprie ricerche, usare la propria testa e agire consapevolmente con i propri soldi
+La *liquidità* di un asset è la sua capacità di essere scambiato e convertito in denaro. Più è facile convertirlo, più è liquido (es. denaro liquido). Più è difficile, più è illiquido (es. immobili)
 
-. Il podcast non darà raccomandazioni di investimento specifiche, ma spiegherà i principi alla base delle decisioni
-
-.
-
-• **Episodio 02: Il Problema Italia - Perché non puoi non investire!**
-
-    ◦ **Necessità di investire**: L'episodio argomenta che, per gli italiani, è **imprescindibile investire i propri soldi** a causa di diverse problematiche strutturali del paese
-
-.
-
-    ◦ **Problema n.1: Le Pensioni**: La situazione delle pensioni in Italia è critica a causa di tre fattori principali: un **grave calo demografico** e l'invecchiamento della popolazione (più pensionati che lavoratori attivi)
-
-, l'inevitabile **aumento dell'età pensionabile**, e un crescente **gap previdenziale** (la differenza tra reddito da lavoro e reddito da pensione). La pensione futura sarà "schifosa"
-
-.
-
-    ◦ **Problema n.2: L'Inflazione**: L'inflazione è la progressiva **svalutazione del potere d'acquisto del denaro** dovuta all'aumento dei prezzi di beni e servizi
-
-. Se non si trovano metodi per far crescere i risparmi almeno al di sopra del tasso di inflazione, si perdono soldi automaticamente. L'inflazione è una "tassa occulta ineliminabile"
-
-.
-
-    ◦ **Problema n.3: Il Debito Pubblico**: Il debito pubblico italiano è il debito che lo Stato ha contratto verso investitori tramite l'emissione di obbligazioni
-
-. L'Italia ha un livello di indebitamento molto alto (145% del PIL), che grava sulle generazioni future e limita la crescita economica. Quando i tassi di interesse salgono (come fa la BCE per contrastare l'inflazione), l'Italia è costretta a pagare interessi più alti per finanziarsi
-
-.
-
-    ◦ **Problema n.4: Salari Stagnanti**: In Italia, i salari crescono poco e meno rispetto ad altri paesi del G7 o dell'Unione Europea, compromettendo la prosperità finanziaria
-
-.
-
-    ◦ **Soluzione all'orizzonte**: Nonostante questi problemi, c'è una "buona notizia": l'esistenza del **concetto di interesse composto**, definito come "la bomba atomica del nostro arsenale", l'unico strumento davvero efficace per far crescere i risparmi nel tempo con risultati spettacolari
-
-.
-
-• **Episodio 03: L'Interesse Composto - I superpoteri della nostra arma segreta**
-
-    ◦ **Il concetto di Interesse Composto**: Viene introdotto come lo strumento più potente per far fruttare i risparmi nel tempo
-
-. Nonostante sembri un concetto matematico complesso, il suo funzionamento è "banalissimo"
-
-.
-
-    ◦ **Spiegazione**: L'interesse composto significa che gli interessi guadagnati (rendimento) non vengono prelevati, ma vengono reinvestiti, e negli anni successivi, l'interesse si applica sulla somma iniziale più gli interessi maturati in precedenza
-
-. Questo porta a una crescita esponenziale del capitale nel lungo termine
-
-.
-
-    ◦ **Esempio pratico**: Un investimento iniziale di €10.000 con un rendimento medio del 5% annuo, lasciato per 40 anni, può trasformarsi in oltre €70.000
-
-. Se si aggiungono €100 al mese, la somma totale investita (€10.000 iniziali + €48.000 aggiunti) può diventare oltre €226.000
-
-.
-
-    ◦ **Bias cognitivo**: Il motivo per cui l'interesse composto è difficile da comprendere intuitivamente è un "bias cognitivo" del cervello umano, che è più predisposto a capire le crescite lineari piuttosto che quelle esponenziali
-
-.
-
-    ◦ **Obiettivi a lungo termine**: L'applicazione dell'interesse composto può portare a: crescita del patrimonio complessivo, integrazione della pensione, creazione di "generational wealth" (ricchezza generazionale), generazione di rendite passive costanti e raggiungimento dell'**indipendenza finanziaria**
-
-.
-
-    ◦ **Dove investire**: Si anticipa che il **mercato finanziario** è il più efficiente, liquido e con i rendimenti più alti e stabili nel lungo termine
-
-. Non si consiglia il trading o l'investimento in singole azioni/obbligazioni o derivati per il risparmiatore privato, ma si accenna ai **fondi indicizzati** e in particolare agli **ETF** (Exchange Traded Funds) come la soluzione più sensata per partecipare alla crescita del mercato azionario con bassi costi e rischi
-
-.
-
-• **Episodio 04: Le principali Asset Class - E perché non dovresti investire in nessuna di esse**
-
-    ◦ **Concetto di Asset Class**: Un "asset" è qualunque cosa con un valore riconoscibile e misurabile in un mercato
-
-. Le principali asset class includono denaro liquido, conti deposito, obbligazioni, azioni, materie prime, criptovalute e immobili. Il podcast si concentra sui mercati regolamentati, con brevi eccezioni per cripto e immobili
-
-.
-
-    ◦ **Relazione Rischio-Rendimento**: Il rendimento atteso di un investimento è **direttamente proporzionale al suo grado di rischiosità**
-
-. Non esiste un investimento a "rischio zero" che prometta rendimenti, altrimenti è una truffa. L'obiettivo è costruire strategie di investimento allineate agli obiettivi personali e alla propensione al rischio
-
-.
-
-    ◦ **Concetto di Liquidità**: La liquidità di un asset è la sua capacità di essere scambiato e convertito in denaro
-
-. Più è facile convertirlo, più è liquido (es. denaro liquido). Più è difficile, più è illiquido (es. immobili)
-
-.
-
-    ◦ **Panoramica delle Asset Class**:
+**Panoramica delle Asset Class**:
 
         ▪ **Denaro (Conto Corrente)**: L'asset più liquido e meno rischioso, ma con rendimento quasi nullo e soggetto all'erosione dell'inflazione
 
@@ -138,66 +52,27 @@
 
 . Si guadagna dalla crescita del valore del titolo e dalla distribuzione dei dividendi. Il prezzo dipende dalle aspettative di guadagno future della società. Il mercato azionario tende a crescere nel lungo termine, ma le singole azioni sono imprevedibili e volatili
 
-.
-
         ▪ **Materie Prime**: Investimenti considerati pericolosi e adatti a professionisti, basati sulla speculazione delle differenze di prezzo
 
-.
-
-        ▪ **Criptovalute**: Come Bitcoin, sono valute non regolamentate e molto volatili
-
-. Investire in esse è "molto molto rischioso"
-
-.
+        ▪ **Criptovalute**: Come Bitcoin, sono valute non regolamentate e molto volatili. Investire in esse è "molto molto rischioso"
 
         ▪ **Immobili**: Nonostante la convinzione popolare italiana, gli immobili sono un investimento **illiquido e rischioso**
 
-. Comportano costi elevati, rischi legati agli inquilini morosi e possibile svalutazione futura
+Comportano costi elevati, rischi legati agli inquilini morosi e possibile svalutazione futura
+La soluzione sarà la **combinazione diversificata** di queste asset class, utilizzando strumenti efficienti
 
-.
-
-    ◦ **Conclusione provvisoria**: Non è opportuno allocare tutti i soldi in nessuna di queste asset class prese singolarmente
-
-. La soluzione sarà la **combinazione diversificata** di queste asset class, utilizzando strumenti efficienti
-
-.
-
-• **Episodio 05: I 3 grandi miti dell'investimento Italiano**
-
-    ◦ **Recap dei punti precedenti**: Necessità di investire per gli italiani, potere dell'interesse composto, e panoramica delle asset class
-
-.
-
-    ◦ **Obiettivo dell'episodio**: Sfatare i tre "grandi falsi Miti del risparmio italiano"
-
-.
-
-    ◦ **Mito n.1: Il mattone è l'investimento più sicuro**:
-
-        ▪ Acquistare una casa per viverci è un bene di consumo, non un investimento
-
+### **I 3 grandi miti dell'investimento Italiano.**
+**Mito n.1: Il mattone è l'investimento più sicuro**:
+Acquistare una casa per viverci è un bene di consumo, non un investimento
 . La sua rivalutazione futura è incerta
 
-.
-
         ▪ Acquistare immobili da mettere a reddito è un investimento illiquido, concentra capitale, comporta costi imprevisti (agenti, manutenzioni) e rischi legali (inquilini morosi)
-
-.
-
         ▪ È sensato solo per patrimoni "molto importanti" (es. 200-300k su un milione di euro investito) per diversificare, non per concentrare tutti i risparmi
+        
+       Esistono strumenti finanziari come i **REIT (Real Estate Investment Trust)**, più efficienti, liquidi e diversificati, per investire nel settore immobiliare senza comprare immobili fisici
 
-.
-
-        ▪ Esistono strumenti finanziari come i **REIT (Real Estate Investment Trust)**, più efficienti, liquidi e diversificati, per investire nel settore immobiliare senza comprare immobili fisici
-
-.
-
-    ◦ **Mito n.2: L'investimento nei titoli di Stato**:
-
+**Mito n.2: L'investimento nei titoli di Stato**:
         ▪ Comprare titoli di Stato italiani (BTP) non è intrinsecamente sbagliato, ma farlo "a caso" è una "bestialità"
-
-.
-
         ▪ I rischi includono il **rischio emittente** (il default dello Stato italiano, seppur basso, non è impossibile)
 
 e il **rischio duration** (se i tassi di interesse salgono, il prezzo delle obbligazioni scende, anche se tenute fino a scadenza possono comportare problemi di liquidità se si necessita di venderle prima)
