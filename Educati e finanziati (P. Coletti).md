@@ -48,4 +48,41 @@ Degiro, Scalable Capital, Trade Republic, Interactive Brokers. Sono famosi perch
 
 ## Matematica finanziaria di base
 
-Interesse composto:
+Prima cosa: ==come calcolare il rendimento di un asset==. Immaginiamo di pagare una bicicletta 100 € e dopo un certo periodo di tempo la vendiamo a 200 €. Il guadagno è quindi: 200 − 100 = 100 € Che differenza c’è se invece compriamo uno Space Shuttle a 99.999.800 € e lo rivendiamo a 99.999.900 €? 
+Il guadagno è sempre: 99.999.900 − 99.999.800 = 100 €
+
+La differenza tra questi due “investimenti” è la seguente: nel primo caso abbiamo investito 100 € e ne abbiamo guadagnati altrettanti, nel secondo caso per guadagnare 100 € abbiamo dovuto spendere 99.999.800 €, quindi l’investimento è stato meno “conveniente”, nel senso che nessuno poteva garantirci, in entrambi i casi, che saremmo riusciti a rivendere il bene acquistato, ma nel primo caso, se non avessimo venduto avremmo “perso” solo 100 €. Con il patrimonio utilizzato per lo Space Shuttle avremmo potuto acquistare 999.998 biciclette con un guadagno effettivo di 99.999.800 euro.
+
+### Rendimento
+Il **rendimento** è il rapporto tra quanto è stato guadagnato e l’investimento iniziale, ovviamente definito solo se l’investimento iniziale è diverso da zero. 
+
+Immaginiamo quindi di investire una cifra $C$ (investimento iniziale o capitale iniziale) e di vendere il prodotto così acquistato dopo un certo periodo di tempo per un guadagno lordo di $V$ (vendita), con guadagno $𝐺 = 𝑉 − 𝐶$. Se rapportiamo quanto guadagnato con quanto investito otteniamo: 
+$$\frac{𝐺}{𝐶} = \frac{𝑉 − 𝐶}{𝐶} = \frac{𝑉}{𝐶} − \frac{𝐶}{𝐶} = \frac{𝑉}{𝐶} − 1$$
+Il rendimento $r$ si calcola quindi con la formula: 
+$$𝑟 = \frac{𝑉}{𝐶} − 1 \tag{1} \label{rendimento}$$
+Riprendendo l'esempio sopra per la bicicletta abbiamo: 
+$$𝑟 = \frac{200}{100} − 1 = 2 − 1 = 1 = 100\%$$ Nel secondo caso abbiamo:
+$$𝑟 = \frac{99.999.900}{99.999.800} − 1 = 1,000001 − 1 = 1 = 0,0001\%$$
+Immaginiamo ora che l’investimento avvenga il giorno 1° gennaio 2025 e venga venduto il bene esattamente un anno dopo in entrambi i casi citati, cioè il giorno 1° gennaio 2026. Quindi il 1° gennaio 2026 avremo guadagnato 100 €, nel primo caso con un alto rendimento, nel secondo caso con un rendimento ridicolo. Cosa succederebbe se potessimo ora ripetere l’investimento con una buona probabilità di poter ottenere lo stesso rendimento?
+
+Dalla $\eqref{rendimento}$ ricaviamo quindi $V$ che ora chiamiamo montante $M$:
+$$M = C(1+r)$$
+che esprime quanto avrò con l'interesse semplice pari a $r$.
+
+Se $r=1 \ (100\%)$ avremo:
+
+01/01/2025 – investimento: $C = -100  \text{ €}$
+01/01/2026 – vendita: $M = 100(1 + 1) = 200 \text{ €}$
+01/01/2026 – investimento: $𝐶 = −200 \text{ €} = −100 ⋅ (1 + 1)$
+01/01/2027 – vendita: $𝑀 = 200 ⋅ (1 + 1) = 100 ⋅ (1 + 1) ⋅ (1 + 1) = 100 ⋅ (1 + 1)2 = 400 \text{ €}$ 01/01/2027 – investimento: $𝐶 = −400 \text{ €}= −100 ⋅ (1 + 1)2$
+01/01/2028 – vendita: $𝑀 = 400 ⋅ (1 + 1) = 100 ⋅ (1 + 1)2 ⋅ (1 + 1) = 100 ⋅ (1 + 1)3 = 800 \text{ €}$
+
+Quindi generalizzando la formula si ha: 
+$$M = C(1 + r)^n \tag{2} \label{interessecomposto}$$ che è chiamata formula dell’**interesse composto**. Quindi in 3 anni abbiamo avuto nel nostro esempio un rendimento di 
+$$r = \frac{800}{100}-1 = 700 \%$$
+nonostante il rendimento annuo fosse del $100 \%$.
+### Confronto tra investimenti con tempi diversi
+Supponiamo di poter investire su due asset, uno che ci garantisce il 20% di rendimento dopo due anni e uno che ci garantisce il 10% di rendimento dopo 1 anno. Quale ci fa guadagnare di più?
+
+Il primo garantisce che dopo due anni, se investo 100, avrò 120; - il secondo garantisce il 10% dopo un anno, quindi da 100 a 110. Ma se noi potessimo ripetere il secondo investimento per il secondo anno, potremmo investire 110 al 10% e otterremmo, secondo la formula del rendimento composto: $$𝑀 = 100 ⋅ (1 + 0,1)^2 = 121$$Quindi, a patto di poter ripetere il secondo investimento dopo un anno e supponendo che i soldi non ci servano dopo un anno ma possiamo reinvestirli allo stesso rendimento (interesse composto), sarebbe più conveniente il secondo investimento.
+#### Annualizzazione dei rendimenti
