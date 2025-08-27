@@ -20,13 +20,15 @@ $$\frac {1}{1+x}=1-x+...$$
 </p>
 da cui:
 <p align="center">
-$$1/\ln(1+x)\approx {\frac {1}{x}}{\frac {1}{1-x/2}}\approx {\frac {1+x/2}{x}}={\frac {1}{x}}+{\frac {1}{2}}$$
-$$t={\frac {\ln {2}}{\ln {(1+r/100)}}}\approx {\frac {100\ln 2}{r}}+{\frac {\ln 2}{2}}\approx {\frac {69,3}{r}}+0,34$$
+$$\frac{1}{\ln(1+x)}\approx {\frac {1}{x}}{\frac {1}{1-\frac{x}{2}}}\approx {\frac {1+\frac{x}{2}}{x}}={\frac {1}{x}}+{\frac {1}{2}}$$
+$$t={\frac {\ln {2}}{\ln {(1+\frac{r}{100})}}}\approx {\frac {100\ln 2}{r}}+{\frac {\ln 2}{2}}\approx {\frac {69,3}{r}}+0,34$$
 </p>
 Questa formula può essere scritta anche come
 <p align="center">
-$$\frac {69,3+0,34r}{r}$$Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per _r_ compreso tra 6 e 10.
+$$\frac {69,3+0,34r}{r}$$
 </p>
+
+Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per _r_ compreso tra 6 e 10.
 
 ## Esempi
 Per avere una stima dei periodi richiesti per raddoppiare il capitale originario investito, occorre dividere la "quantità della regola" per il tasso di crescita atteso $r$, espresso in percentuale.
