@@ -28,7 +28,8 @@ Questa formula può essere scritta anche come
 $$t\approx\frac {69,3+0,34r}{r}$$
 </p>
 
-Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per _r_ compreso tra 6 e 10.
+Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per $r$ compreso tra 6 e 10. Se $r=6$ allora $t \approx \frac{69,3 + 0,34 \cdot 6}{r} = \frac{71,34}{r}$
+mentre se $r=10$ allora $t \approx \frac{69,3 + 0,34 \cdot 10}{r} = \frac{72,7}{r}$ che corrisponde in questo intervallo di rendimneto, con una accettabile approssimazoine, a usare $\frac{72}{r}$.
 
 ## Esempi
 Per avere una stima dei periodi richiesti per raddoppiare il capitale originario investito, occorre dividere la "quantità della regola" per il tasso di crescita atteso $r$, espresso in percentuale.
