@@ -1,7 +1,19 @@
-In caso di interesse periodico, il tempo di raddoppiamento $t$ per un tasso di interesse $r$ riferito a un capitale investito $C_0$ sul periodo è la soluzione dell'equazione 
-$$C_0(1+r/100)^{t}=2C_0$$ 
+In caso di interesse periodico, il tempo di raddoppiamento $t$ per un tasso di interesse $r$ riferito a un capitale investito $C_0$ sul periodo è la soluzione dell'equazione:
+
+<p align="center">
+
+$$C_0(1+r/100)^{t}=2C_0$$
+
+</p>
+
 cioè:
-$$t=\log _{1+r/100}(2)={\frac {1}{\ln _{2}(1+r/100)}}\approx {\frac {72}{r}}$$
+
+<p align="center">
+
+$$t=\log _{1+r/100}(2)={\frac {1}{\ln (1+r/100)}}\approx {\frac {72}{r}}$$
+
+</p>
+
 
 dove _t_ è il numero di periodi richiesti.
 La regola del 72 deriva dall'espansione di Taylor del logaritmo e dell'inverso, troncate al secondo termine:
