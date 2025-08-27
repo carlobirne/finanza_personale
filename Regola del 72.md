@@ -25,7 +25,7 @@ $$t={\frac {\ln {2}}{\ln {(1+\frac{r}{100})}}}\approx {\frac {100\ln 2}{r}}+{\fr
 </p>
 Questa formula può essere scritta anche come
 <p align="center">
-$$\frac {69,3+0,34r}{r}$$
+$$t\approx\frac {69,3+0,34r}{r}$$
 </p>
 
 Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per _r_ compreso tra 6 e 10.
