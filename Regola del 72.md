@@ -9,21 +9,24 @@ $$C_0(1+r/100)^{t}=2C_0$$
 cioè:
 
 <p align="center">
-
 $$t=\log _{1+r/100}(2)={\frac {1}{\ln (1+r/100)}}\approx {\frac {72}{r}}$$
-
 </p>
-
 
 dove _t_ è il numero di periodi richiesti.
 La regola del 72 deriva dall'espansione di Taylor del logaritmo e dell'inverso, troncate al secondo termine:
+<p align="center">
 $$\ln {(1+x)}=x-{\frac {x^{2}}{2}}+...$$
 $$\frac {1}{1+x}=1-x+...$$
+</p>
 da cui:
+<p align="center">
 $$1/\ln(1+x)\approx {\frac {1}{x}}{\frac {1}{1-x/2}}\approx {\frac {1+x/2}{x}}={\frac {1}{x}}+{\frac {1}{2}}$$
 $$t={\frac {\ln {2}}{\ln {(1+r/100)}}}\approx {\frac {100\ln 2}{r}}+{\frac {\ln 2}{2}}\approx {\frac {69,3}{r}}+0,34$$
+</p>
 Questa formula può essere scritta anche come
+<p align="center">
 $$\frac {69,3+0,34r}{r}$$Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per _r_ compreso tra 6 e 10.
+</p>
 
 ## Esempi
 Per avere una stima dei periodi richiesti per raddoppiare il capitale originario investito, occorre dividere la "quantità della regola" per il tasso di crescita atteso $r$, espresso in percentuale.
