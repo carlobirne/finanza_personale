@@ -12,11 +12,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Get obsidian-export
-        run: git clone --depth 1 https://github.com/obsidian-community/obsidian-export.git obsidian-export
-
-      - name: Run export
-        run: npx ./obsidian-export ./ ./ExportedNotes
+      - name: Run obsidian-export via npx
+        run: npx github:obsidian-community/obsidian-export ./ ./ExportedNotes
 
       - name: Commit exported notes
         run: |
