@@ -29,12 +29,12 @@ $$t\approx\frac {69,3+0,34r}{r}$$
 </p>
 
 Il numero 72 risulta quindi un'ottima approssimazione del numeratore per tassi di interesse pari all'8%, e rimane sufficientemente accurato per $r$ compreso tra 6 e 10. Se $r=6$ allora $t \approx \frac{69,3 + 0,34 \cdot 6}{r} = \frac{71,34}{r}$
-mentre se $r=10$ allora $t \approx \frac{69,3 + 0,34 \cdot 10}{r} = \frac{72,7}{r}$ che corrisponde in questo intervallo di rendimento, con una accettabile approssimazoine, a usare $\frac{72}{r}$.
+mentre se $r=10$ allora $t \approx \frac{69,3 + 0,34 \cdot 10}{r} = \frac{72,7}{r}$ che corrisponde in questo intervallo di rendimento, con una accettabile approssimazione, a usare $\frac{72}{r}$.
 
 ## Esempi
 Per avere una stima dei periodi richiesti per raddoppiare il capitale originario investito, occorre dividere la "quantità della regola" per il tasso di crescita atteso $r$, espresso in percentuale.
 
-- Per esempio, considerando un investimento iniziale di 100 € con un tasso di interesse composto pari al 9% l'anno, secondo la regola del 72 sono necessari 72/9 = 8 anni perché la somma investita arrivi a 200 €. In confronto, un calcolo esatto restituisce come risultato:ln(2)/ln(1+0,09) = 8,0432 anni.  
+- Per esempio, considerando un investimento iniziale di 100 € con un tasso di interesse composto pari al 9% l'anno, secondo la regola del 72 sono necessari 72/9 = 8 anni perché la somma investita arrivi a 200 €. In confronto, un calcolo esatto restituisce come risultato: ln(2)/ln(1+0,09) = 8,0432 anni.  
 
 Allo stesso modo, per determinare il tempo necessario al dimezzamento di una certa quantità dato un determinato tasso, si divide il "numero della regola" per il tasso.
 - Per determinare il tempo necessario affinché il potere della moneta si dimezzi, è sufficiente dividere il "numero della regola" per il tasso di inflazione. Quindi, considerando un tasso di inflazione del 3,5% e usando la "regola del 70", si ottiene un periodo di 70/3,5 = 20 anni perché il potere d'acquisto si dimezzi.
