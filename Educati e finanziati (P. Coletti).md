@@ -86,4 +86,4 @@ Supponiamo di poter investire su due asset, uno che ci garantisce il 20% di rend
 
 Il primo garantisce che dopo due anni, se investo 100, avrò 120; - il secondo garantisce il 10% dopo un anno, quindi da 100 a 110. Ma se noi potessimo ripetere il secondo investimento per il secondo anno, potremmo investire 110 al 10% e otterremmo, secondo la formula del rendimento composto: $$𝑀 = 100 ⋅ (1 + 0,1)^2 = 121$$Quindi, a patto di poter ripetere il secondo investimento dopo un anno e supponendo che i soldi non ci servano dopo un anno ma possiamo reinvestirli allo stesso rendimento (interesse composto), sarebbe più conveniente il secondo investimento.
 #### Annualizzazione dei rendimenti
-prova prova [[Regola del 72]] prova
+prova prova [[Regola del 72]]
