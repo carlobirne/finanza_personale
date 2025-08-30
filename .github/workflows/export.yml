@@ -8,13 +8,37 @@ on:
 jobs:
   export:
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Checkout your repository
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Run obsidian-export via npx
-        run: npx github:obsidian-community/obsidian-export ./ ./ExportedNotes
+      # Step 2: Setup Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
+      # Step 3: Clone obsidian-export via HTTPS (avoids SSH issues)
+      - name: Clone obsidian-export
+        run: |
+          export GIT_TERMINAL_PROMPT=0
+          git clone --depth 1 https://github.com/obsidian-community/obsidian-export.git obsidian-export
+
+      # Step 4: Install dependencies of obsidian-export
+      - name: Install dependencies
+        run: |
+          cd obsidian-export
+          npm install
+
+      # Step 5: Run obsidian-export to generate exported notes
+      - name: Run export
+        run: |
+          cd obsidian-export
+          npx ./ ../../ExportedNotes
+
+      # Step 6: Commit and push exported notes to gh-pages branch
       - name: Commit exported notes
         run: |
           cd ExportedNotes
