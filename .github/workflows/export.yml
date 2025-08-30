@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Install obsidian-export
-        run: npm install -g git+https://github.com/obsidian-community/obsidian-export.git
-        
+	run: npm install -g @obsidian-community/obsidian-export
+	
       - name: Run export
         run: obsidian-export ./ ./ExportedNotes
 
