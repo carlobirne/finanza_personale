@@ -1,0 +1,30 @@
+name: Export Obsidian Notes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install obsidian-export
+        run: npm install -g obsidian-export
+
+      - name: Run export
+        run: obsidian-export ./ ./ExportedNotes
+
+      - name: Commit exported notes
+        run: |
+          cd ExportedNotes
+          git init
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Auto-export notes from Obsidian"
+          git branch -M gh-pages
+          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
