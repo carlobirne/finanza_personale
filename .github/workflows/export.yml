@@ -14,7 +14,7 @@ jobs:
         
       - name: Install obsidian-export
         run: npm install -g @obsidian-community/obsidian-export
-	
+        
       - name: Run export
         run: obsidian-export ./ ./ExportedNotes
 
@@ -28,3 +28,4 @@ jobs:
           git commit -m "Auto-export notes from Obsidian"
           git branch -M gh-pages
           git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+
