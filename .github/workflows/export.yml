@@ -11,10 +11,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        
-      - name: Install obsidian-export
-        run: npm install -g github:obsidian-community/obsidian-export
-        
+
+      - name: Clone obsidian-export
+        run: |
+          git clone https://github.com/obsidian-community/obsidian-export.git
+          cd obsidian-export
+          npm install
+          npm link
+
       - name: Run export
         run: obsidian-export ./ ./ExportedNotes
 
