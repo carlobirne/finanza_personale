@@ -59,13 +59,19 @@ Il **rendimento** è il rapporto tra quanto è stato guadagnato e l’investimen
 Immaginiamo quindi di investire una cifra $C$ (investimento iniziale o capitale iniziale) e di vendere il prodotto così acquistato dopo un certo periodo di tempo per un guadagno lordo di $V$ (vendita), con guadagno $𝐺 = 𝑉 − 𝐶$. Se rapportiamo quanto guadagnato con quanto investito otteniamo: 
 $$\frac{𝐺}{𝐶} = \frac{𝑉 − 𝐶}{𝐶} = \frac{𝑉}{𝐶} − \frac{𝐶}{𝐶} = \frac{𝑉}{𝐶} − 1$$
 Il rendimento $r$ si calcola quindi con la formula: 
-$$𝑟 = \frac{𝑉}{𝐶} − 1 \tag{1} \label{rendimento}$$
+
+$$
+𝑟 = \frac{𝑉}{𝐶} − 1 \tag{rendimento}
+$$
+
+^263099
+
 Riprendendo l'esempio sopra per la bicicletta abbiamo: 
 $$𝑟 = \frac{200}{100} − 1 = 2 − 1 = 1 = 100\%$$ Nel secondo caso abbiamo:
 $$𝑟 = \frac{99.999.900}{99.999.800} − 1 = 1,000001 − 1 = 1 = 0,0001\%$$
 Immaginiamo ora che l’investimento avvenga il giorno 1° gennaio 2025 e venga venduto il bene esattamente un anno dopo in entrambi i casi citati, cioè il giorno 1° gennaio 2026. Quindi il 1° gennaio 2026 avremo guadagnato 100 €, nel primo caso con un alto rendimento, nel secondo caso con un rendimento ridicolo. Cosa succederebbe se potessimo ora ripetere l’investimento con una buona probabilità di poter ottenere lo stesso rendimento?
 
-Dalla $\eqref{rendimento}$ ricaviamo quindi $V$ che ora chiamiamo montante $M$:
+Dal [[#^263099|rendimento]] ricaviamo quindi $V$ che ora chiamiamo montante $M$:
 $$M = C(1+r)$$
 che esprime quanto avrò con l'interesse semplice pari a $r$.
 
@@ -78,12 +84,62 @@ Se $r=1 \ (100\%)$ avremo:
 01/01/2028 – vendita: $𝑀 = 400 ⋅ (1 + 1) = 100 ⋅ (1 + 1)2 ⋅ (1 + 1) = 100 ⋅ (1 + 1)3 = 800 \text{ €}$
 
 Quindi generalizzando la formula si ha: 
-$$M = C(1 + r)^n \tag{2} \label{interessecomposto}$$ che è chiamata formula dell’**interesse composto**. Quindi in 3 anni abbiamo avuto nel nostro esempio un rendimento di 
+
+$$
+M = C(1 + r)^n \tag{interesse composto}
+$$
+
+^49b2d3
+
+che è chiamata formula dell’**interesse composto**. Quindi in 3 anni abbiamo avuto nel nostro esempio un rendimento di 
 $$r = \frac{800}{100}-1 = 700 \%$$
 nonostante il rendimento annuo fosse del $100 \%$.
 ### Confronto tra investimenti con tempi diversi
 Supponiamo di poter investire su due asset, uno che ci garantisce il 20% di rendimento dopo due anni e uno che ci garantisce il 10% di rendimento dopo 1 anno. Quale ci fa guadagnare di più?
 
-Il primo garantisce che dopo due anni, se investo 100, avrò 120; - il secondo garantisce il 10% dopo un anno, quindi da 100 a 110. Ma se noi potessimo ripetere il secondo investimento per il secondo anno, potremmo investire 110 al 10% e otterremmo, secondo la formula del rendimento composto: $$𝑀 = 100 ⋅ (1 + 0,1)^2 = 121$$Quindi, a patto di poter ripetere il secondo investimento dopo un anno e supponendo che i soldi non ci servano dopo un anno ma possiamo reinvestirli allo stesso rendimento (interesse composto), sarebbe più conveniente il secondo investimento.
+Il primo garantisce che dopo due anni, se investo 100, avrò 120; il secondo garantisce il 10% dopo un anno, quindi da 100 a 110. Ma se noi potessimo ripetere il secondo investimento per il secondo anno, potremmo investire 110 al 10% e otterremmo, secondo la formula dell'[[#^49b2d3|interesse composto]]: 
+
+$$
+𝑀 = 100 ⋅ (1 + 0,1)^2 = 121
+$$
+Quindi, a patto di poter ripetere il secondo investimento dopo un anno e supponendo che i soldi non ci servano dopo un anno ma possiamo reinvestirli allo stesso rendimento (interesse composto), sarebbe più conveniente il secondo investimento.
 #### Annualizzazione dei rendimenti
- prova [[Regola del 72]]
+Immaginiamo di avere due investimenti che ci garantiscono lo stesso montante 𝑀 partendo dallo stesso capitale iniziale $C$, il primo dei due investimenti ha durata pari ad un anno, il secondo ha una durata generica che chiameremo $n$ (di solito numero di anni, ma può anche essere un numero non intero). Essendo il montante uguale quello che ottengo a fine investimento sarà
+$$
+𝑀 =𝐶(1 + 𝑟_1)^1 = 𝐶(1 + 𝑟_2)^𝑛
+$$
+$r_1$ ed $r_2$ sono i due rendimenti per i due investimenti. Il primo garantisce un rendimento $r_1$ e ha durata 1 anno quindi l'esponente sarà 1 mentre il secondo ha rendimento $r_2$ e ha durata ignota di $n$ anni. L'equazione sopra si può riscrivere come
+$$
+(1 + 𝑟_1)^1 = (1 + 𝑟_2)^𝑛
+$$
+da cui deriva, esplicitando $r_2$ la formula per annualizzare un rendimento (o un tasso di interesse riferito a un periodo diverso da un anno):
+$$
+ r_2 = (1 + 𝑟_1)^{1/n}-1 \tag{annualizzazione del rendimento}
+$$
+Questa formula serve per trovare il rendimento $r_2$ di un investimento di cui non conosciamo il rendimento annuo e poter fare un confronto. Si può sostituire il termine rendimento con tasso di interesse $i$. Ad esempio conviene di più investire per 17 mesi al 2% di interesse o per 31 mesi al 3,5% di interesse?17 mesi sono circa 1.58 anni, mentre 31 mesi sono circa 2.58 anni.
+
+$$
+\begin{align}
+i_1 =& (1 + 0,02)^{1/1,58}-1=1,26 \%&\\
+i_2 =& (1 + 0,035)^{1/2,58}-1=1,34 \%
+\end{align}
+$$
+Conviene il secondo investimento con il tasso di interesse $i_2$ poiché, a parità di montante, rende annualmente di più il secondo investimento. 
+
+La formula si può usare al contrario per ricavare l'interesse su un periodo desiderato conoscendo il rendimento annuale dell'investimento. Consideriamo lo stesso montante tra l'investimento che dura 1 anno e uno che dura $n$ generico (misurato in anni).
+
+$$
+(1 + r_{annuale})^n = (1+r_2)^1
+$$
+Quindi risolvendo ora rispetto a $r_2$
+$$
+r_2= (1+r_{annuale})^{n} -1
+$$
+
+Ad esempio un investimento di durata 270 giorni che sappiamo rendere il 3,5% annuo avrà un rendimento sui 270 gg pari a 
+$$
+r_{270 \ gg}= (1+0,035)^{270/365} -1 =2,58 \%
+$$
+*(per essere precisi bisognerebbe usare come gg in un anno 365,24)*.
+#### Flussi di denaro ( da finire 6.4 )
+
