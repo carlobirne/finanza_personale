@@ -41,6 +41,8 @@ Di base il conto titoli ha questi costi:
 - costi dipendenti dagli ordini: si paga una commissione per ogni ordine di acquisto o di vendita che si fa. Ogni volta che si compra o si vende in un conto titoli viene applicata una commissione dalla banca che può essere fissa o in percentuale rispetto all’importo di acquisto o di vendita. Per dare un ordine di grandezza: 5 € è un buon prezzo per una commissione fissa (se si scambiano importi che abbiano margine rispetto alla commissione), mentre quando si parla di percentuali, di solito si aggirano intorno a 0,1% - 0,2% ad operazione.
 Si possono trasferire i titoli, cioè gli strumenti finanziari acquistati, da un conto titoli a un altro. Grazie alla legge Bersani, questa è un’operazione che ora si fa gratuitamente (prima si pagavano tranquillamente 50 € a titolo). Il problema è che questa operazione va fatta a mano da parte degli addetti delle banche; quindi, solitamente è un’operazione che richiede tempo, potrebbe addirittura arrivare ad un mese di tempo richiesto.
 
+#### Intemediari italiani
+Al 2025 i principali intermediari con regime amministrato in Italia (gestiscono direttamente la fiscalità rispetto ai tuoi investimenti) sono Fineco, Directa,  IWBank, Trade Republic.
 #### Intemediari esteri
 I più famosi in Italia nel febbraio 2024 sono: 
 Degiro, Scalable Capital, Trade Republic, Interactive Brokers. Sono famosi perché hanno profili di commissioni migliori rispetto agli italiani o addirittura hanno commissioni gratuite. Inoltre, danno accesso a mercati ai quali molti intermediari italiani non danno accesso. Tuttavia, è meglio evitare per un investitore alle prime armi tali tipologie di intermediari. Questo perché, in caso di intermediario italiano le tasse sugli investimenti finanziari vengono calcolate e pagate direttamente dall’intermediario italiano, mentre in caso di intermediari esteri non è così e le tasse vanno pagate autonomamente. 
@@ -116,6 +118,9 @@ da cui deriva, esplicitando $r_2$ la formula per annualizzare un rendimento (o u
 $$
  r_2 = (1 + 𝑟_1)^{1/n}-1 \tag{annualizzazione del rendimento}
 $$
+
+^dc99c5
+
 Questa formula serve per trovare il rendimento $r_2$ di un investimento di cui non conosciamo il rendimento annuo e poter fare un confronto. Si può sostituire il termine rendimento con tasso di interesse $i$. Ad esempio conviene di più investire per 17 mesi al 2% di interesse o per 31 mesi al 3,5% di interesse?17 mesi sono circa 1.58 anni, mentre 31 mesi sono circa 2.58 anni.
 
 $$
@@ -141,5 +146,152 @@ $$
 r_{270 \ gg}= (1+0,035)^{270/365} -1 =2,58 \%
 $$
 *(per essere precisi bisognerebbe usare come gg in un anno 365,24)*.
-#### Flussi di denaro ( da finire 6.4 )
+#### Flussi di denaro, VAN, TIR
+Quando un investimento non prevede un solo acquisto e una sola vendita, ma una serie di pagamenti e incassi nel tempo, si parla di **flussi di cassa**.
+In investimenti come obbligazioni che pagano cedole semestrali o azioni che distribuiscono dividendi annuali è necessario imparare a gestire questo tipo di flussi di cassa.
+Tipicamente le uscite sono col segno negativo, le entrate col segno positivo. Immaginiamo di acquistare un’obbligazione che paga una cedola semestrale dell’1,5% (ha quindi un rendimento annuo del 3%). Questa obbligazione la paghiamo 100 € oggi e la durata della stessa è di 4 anni, quanto sarà il rendimento totale annualizzato, considerando la presenza delle cedole? Anzitutto scriviamo il flusso di cassa: 
 
+| date       | flussi |
+| ---------- | ------ |
+| 01/01/2025 | -100   |
+| 01/07/2025 | 1,5    |
+| 01/01/2026 | 1,5    |
+| 01/07/2026 | 1,5    |
+| 01/01/2027 | 1,5    |
+| 01/07/2027 | 1,5    |
+| 01/01/2028 | 1,5    |
+| 01/07/2028 | 1,5    |
+| 01/01/2029 | 1,5    |
+
+Se calcolassimo il rendimento semplicemente sommando tutti i flussi positivi (8 cedole + restituzione del capitale iniziale pari a 100) e dividendoli per l’investimento iniziale otterremmo:
+$$
+\frac{1,5 \cdot 8 + 100}{100}-1=12 \%
+$$
+dove si è utilizzata la definizione di [[#^49b2d3|interesse composto]] (con $n = 1$) quindi per calcolare il rendimento globale, non annualizzato: 
+$$
+\frac{M}{C} - 1 = r
+$$
+Se invece annualizziamo il rendimento basta usare la formula di [[#^dc99c5|annualizzazione del rendimento]] scegliendo $r_1=12 \%$ e $n=4$ e si ottiene:
+$$
+(1+12 \%)^\frac{1}{4}-1=2,87 \%
+$$Ci aspettiamo un rendimento annuo del $2,87 \%$. Tuttavia il fatto che il pagamento viene effettuato tramite cedole semestrali ha molteplici effetti positivi: **avere i soldi “prima” è meglio che averli “dopo”**, ed è meglio ad esempio avere un pagamento in cedole semestrali invece che una volta all’anno. Gli effetti positivi sono:
+- mitigare l’inflazione: il denaro “perde valore nel tempo” e quindi è meglio avere oggi i soldi invece che domani (gli interessi esistono per questo motivo)
+- possiamo spendere i soldi prima (disponibilità economica)
+- sicurezza di avere i soldi, infatti prima arrivano, più è probabile che si ricevano
+- i soldi che arrivano prima possiamo reinvestirli ottenendo ulteriore rendimento
+
+> [!tempo_denaro] Paperon de paperoni *dixit*
+> Il tempo è denaro
+
+Il **Valore Attuale Netto (VAN)**, in inglese Net Present Value (NPV), è uno strumento che permette di **spostare qualsiasi valore di capitale nel futuro o nel passato al tempo attuale (tempo zero)**, rendendolo confrontabile con i valori attuali. In pratica, calcola il valore odierno di una serie di flussi di cassa (entrate e uscite) che avverranno in tempi diversi da oggi.
+
+Consideriamo inoltre gli anni con $t_j$ per indicare i tempi  $t_0,t_1,t_2,...$ ai quali si verificano i flussi di cassa. Quindi al tempo $t_j$ avremo il flusso $C_j$. Consideriamo un montante $C_{t_n}$ ottenuto al tempo $t_n$ grazie a un investimento di $n$ anni tramite un rendimento annuale $i$. Vogliamo sapere quanti soldi ora corrispondono al montante ottenuto. Inverto la formula di interesse composto $C_{t_n}=C_{attuale}(1+i)^{t_n}$ e ottengo 
+$$
+C_{attuale}=\frac{C_{t_n}}{(1+i)^n}
+$$
+Facciamo un esempio: se avessi investito capitale per 100.000 € 3 anni fa, in un investimento che rende il 3 % annuo quanti soldi avrei ora? Si tratta di un capitale nel passato ($n$ è negativo e pari a -3). Il valore attuale del capitale $C_{t_n}$ investito 3 anni fa è quindi aumentato a
+$$
+C_{attuale}=\frac{100.000}{(1+3 \%)^{-3}} = 109.272,7 \text{ €}
+$$
+Al contrario se si attualizzasse un capitale nel futuro, si prenda sempre la cifra di prima: 100.000 € tra 3 anni. Qual è il valore attuale? 
+$$
+C_{attuale}=\frac{100.000}{(1+3 \%)^{3}} = \text{ 91.514,2 €}
+$$
+
+In generale potremmo avere molti flussi di cassa. Definiamo quindi per un flusso di cassa il VAN come
+$$
+VAN = \sum_{j=0}^n \frac{C_j}{(1+i)^{t_j}} \tag{VAN}
+$$
+dove $C_j$ sono i flussi di cassa che possono essere positivi (denaro ricevuto) o negativi (denaro pagato). Negli investimenti, ad esempio, è comune avere un flusso negativo iniziale (il costo dell'investimento) seguito da flussi positivi (i ricavi). $i$ è detto **tasso di sconto**, o costo del capitale, che è un tasso di interesse deciso da chi effettua i calcoli (può essere il rendimento, come negli esempi sopra ma può anche includere l'inflazione). Quindi un $i$ del 10% potrebbe corrispondere all'ipotesi che il denaro valga il 10% in meno tra un anno o che potresti guadagnare il 10% reinvestendolo. Al posto di $n$, per gli anni, usiamo il più generico $t_j$, il momento temporale j-esimo in cui si verifica un flusso di cassa. Se è negativo, significa un flusso di cassa nel passato; se è positivo, un flusso nel futuro. 
+In breve le varie entrate e uscite di denaro ai tempi $t_j$ vengono "riportate" al tempo $t_0$ e sommate per capire qual è il valore attuale del totale flusso di cassa distribuito nel tempo.
+
+Facciamo un altro semplice esempio: conviene ricevere 100 euro ora o 105 euro tra un anno con un tasso di sconto del 3 %? Nel primo caso siamo al tempo $t_0$ = 0, quindi nel presente, e il VAN coincide con
+
+$$
+VAN_{1} = \frac{100}{(1+i)^{0}} = 100 \text{€}
+$$
+Si ricorda che un qualsiasi numero elevato alla zero dà 1, quindi $(1+i)^0=1$.
+Nel secondo caso invece calcoliamo il valore attuale netto di 105 fra un anno ad un tasso di sconto del 3 %
+$$
+VAN_{2} = \frac{105}{(1+0,03)^{1}} = 101,94 \text{€}
+$$
+Essendo il VAN del secondo caso maggiore conviene il secondo investimento. Se invece il tasso fosse maggiore perché consideriamo una inflazione aggiuntiva del 2,4 % avremo un tasso di sconto di 3 % + 2,4 % = 5,4 %. Con il nuovo tasso il secondo investimento non è più conveniente perché attualizzando i 105
+$$
+VAN_{2} = \frac{105}{(1+0,054)^{1}} = 99,62 \text{€}
+$$
+equivalgono oggi a 99,62 che sono inferiori ai 100 ricevuti subito. Il principio generale è che **un'inflazione positiva rende il denaro futuro meno prezioso, richiedendo quindi un tasso di sconto maggiore per riportare i flussi di cassa al valore attuale**.
+
+Per un calcolo **su excel** basta usare la **funzione XNPV** come si vede nell'esempio di flusso di cassa sotto: ![[VAN_excel.png]] 
+
+Se però scegliamo tassi di sconto diversi per valutare un investimento? Proviamo a vedere qual è il tasso di sconto $i$ che azzera il VAN di un flusso di cassa
+
+$$
+TIR := i \text{ \qquad tale che \qquad } VAN = 0 \tag{TIR}
+$$
+Il **Tasso Interno di Rendimento (TIR)** rappresenta il tasso di sconto relativo a un flusso di cassa come se avessimo messo i soldi in banca a quell'interesse per il numero di anni dell'investimento. Si precisa che il tasso di sconto è costante e capitalizzato annualmente (viene conferito l'interesse sul capitale una volta all'anno). Quindi indipendentemente dal tasso di sconto scelto possiamo calcolare il TIR di un flusso di cassa. ==È l'etichetta di rendimento che può essere associata a ogni forma di investimento o debito.== ==Il TIR perciò permette di confrontare investimenti differenti in periodi diversi e valutare il migliore.== Mi dice quanto l'investimento rende o nel caso in cui parliamo di debiti, quanto il debito costa. Tra 2 investimenti converrà scegliere il TIR più alto, tra 2 debiti il TIR più basso.
+
+Non esiste una formula chiusa per calcolare il TIR e si calcola facilmente su excel con funzioni come `TIR.X` in italiano o `XIRR` in inglese, in Excel.
+![[TIR_excel.png]]
+Nell'esempio in immagine si ha un flusso di cassa per un investimento che ci dà, dopo un esborso iniziale di 3000, per 2 anni 300 e al terzo anno restituisce 2500. Il TIR calcolato in excel dà 1,22 %. Questo ci dice che l'investimento equivale a mettere i soldi in banca con un interesse pari al TIR (1,22%) per 3 anni. Questo non varia al variare del tasso di sconto mentre il VAN varia secondo il grafico qui sotto.
+![[chart_VAN_i.png]]
+Il VAN (retta blu) decresce all'aumentare del tasso di sconto. Se ad esempio l'inflazione aumentasse, $i$ sarebbe più alto e i vari flussi nei 3 anni dell'investimento avrebbero valore attuale minore. Il TIR è il valore di $i$ in corrispondenza dell'intersezione della retta blu con la retta orizzontale corrispondente a VAN = 0.
+
+Se ci viene proposto un investimento e vengono indicati anche i flussi di cassa e sono certi (come nelle obbligazioni), è utile usare la formula del TIR piuttosto che l’equazione del rendimento standard. *Quanto appena detto vale sempre sotto l’ipotesi che si possano reinvestire i guadagni delle cedole.*
+
+Consideriamo per ultimo esempio il seguente flusso di cassa che ha cedola semestrale di 100 e
+tasso di sconto del 4 %. Il VAN con questo tasso è di 6,75. 
+
+| **data**   | **flusso** |
+| ---------- | ---------- |
+| 01/01/2022 | -5000      |
+| 01/07/2022 | 100        |
+| 01/01/2023 | 100        |
+| 01/07/2023 | 100        |
+| 01/01/2024 | 100        |
+| 01/07/2024 | 100        |
+| 01/01/2025 | 5100       |
+|            |            |
+| **TIR**    | **4,04%**  |
+Il rendimento semplice è $$ \frac{5100 + 100 \cdot 5}{5000}-1=12 \% $$
+Il rendimento annualizzato è calcolato 
+$$
+(1+12 \%)^\frac{1}{3}-1=2,87 \%
+$$
+
+Ora consideriamo un secondo investimento con cedola trimestrale e tasso di sconto del 3 %. Questa volta il VAN  con questo tasso è 7,81. 
+
+| data       | flusso    |
+| ---------- | --------- |
+| 01/01/2022 | -5000     |
+| 01/04/2022 | 50        |
+| 01/07/2022 | 50        |
+| 01/10/2022 | 50        |
+| 01/01/2023 | 50        |
+| 01/04/2023 | 50        |
+| 01/07/2023 | 50        |
+| 01/10/2023 | 50        |
+| 01/01/2024 | 50        |
+| 01/04/2024 | 50        |
+| 01/07/2024 | 50        |
+| 01/10/2024 | 50        |
+| 01/01/2025 | 5050      |
+|            |           |
+| **TIR**    | **4,06%** |
+Il rendimento semplice è ancora $$ \frac{5050 + 50 \cdot 11}{5000}-1=12 \% $$Il rendimento annualizzato è ancora
+$$
+(1+12 \%)^\frac{1}{3}-1=2,87 \%
+$$
+I rendimenti sono quindi equivalenti, tuttavia il TIR è maggiore nel secondo caso, anche se di poco, quindi il secondo investimento conviene.
+
+## Il fondo di emergenza
+
+
+## Spese prevedibili a medio termine. Le obbligazioni
+
+
+
+
+## Il fondo pensione
+17.1 Cos’è il fondo pensione Il fondo pensione è uno strumento di investimento a lungo termine che offre un modo per risparmiare per la pensione. La sua caratteristica principale è quella di fornire un vantaggio fiscale, in quanto offre defiscalizzazione sui contributi versati, di seguito alcuni vantaggi e svantaggi del fondo pensione: 1. natura dell’investimento: un fondo pensione è un veicolo di investimento in cui è possibile depositare denaro. Il tipo di fondo può variare, e le modalità di investimento possono essere gestite in base alle preferenze e agli obiettivi del sottoscrittore. 2. finalità pensionistica: i soldi depositati in un fondo pensione sono destinati principalmente a essere utilizzati durante la pensione. Di solito, non è possibile ritirare i fondi prima della data di pensionamento stabilita, a meno di alcuni avvenimenti particolari, come l’acquisto della prima casa, finalità di salute, ecc.; 3. defiscalizzazione: il vantaggio principale di un fondo pensione è la defiscalizzazione. Ciò significa che, a differenza di altri investimenti, i contributi versati al fondo pensione sono esenti IRPEF fino ad un massimale; 4. tassazione ridotta in fase di pensionamento: quando si raggiunge l’età pensionabile e si inizia a ricevere le prestazioni dal fondo pensione, la tassazione ha una aliquota tra il 9 e il 15%. Questo è un incentivo per mantenere i fondi nel fondo pensione fino al pensionamento. 5. limitazioni e svantaggi: nonostante i vantaggi fiscali, i fondi pensione possono avere delle limitazioni e degli svantaggi. Ad esempio, potrebbero essere limitate le opzioni di investimento, e ci potrebbero essere penali per il ritiro anticipato o restrizioni sull’uso dei fondi.
+
+[Simulazione della propria pensione](https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-strumenti.la-mia-pensione-futura-simulazione-della-propria-pensione-50033.la-mia-pensione-futura-simulazione-della-propria-pensione.html)
