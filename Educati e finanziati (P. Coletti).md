@@ -287,6 +287,29 @@ I rendimenti sono quindi equivalenti, tuttavia il TIR è maggiore nel secondo ca
 
 
 ## Spese prevedibili a medio termine. Le obbligazioni
+Queste spese sono tutte quelle che intercorrono tra 1 e 10 anni e che sono prevedibili e vanno nel terzo pilastro. Tutti questi casi riguardano spese prevedibili e per le quali possiamo decidere di allocare dei soldi oggi in modo da arrivare tra un certo numero di anni ad avere i soldi che ci serviranno, con qualche interesse. Lo strumento migliore per fare questo tipo di operazioni sono (a marzo 2024) le **obbligazioni**. Un’obbligazione (o bond) è un titolo di credito che conferisce al possessore il diritto di ricevere un rimborso del capitale nominale alla scadenza del prestito obbligazionario e in aggiunta una remunerazione a titolo di interesse solitamente sotto forma di cedole periodiche. Colui che riceve il denaro inizialmente si impegna a restituirlo alla scadenza del periodo dell’obbligazione e di pagare delle cedole periodiche al creditore. Solitamente le obbligazioni sono emesse dagli stati o da soggetti privati (banche, società, ecc.) e possiamo comprarle tutti.
+
+Il rischio più significativo associato all’acquisto di un’obbligazione è la possibilità che l’emittente non rimborsi l’importo prestato dall’investitore. Nel caso di obbligazioni aziendali, il rischio è il fallimento dell’azienda emittente, mentre nel caso di titoli di stato il rischio è che lo stato non onori il proprio debito o decida di non rimborsare gli investitori a causa di cambiamenti legislativi, scelte politiche o sparizione dello stato per eventi geopolitici (eventi che rimangono rari nel caso degli stati, come si intuisce).
+
+L'obbligazione più semplice o *plain vanilla* si struttura come nell'esempio sotto:
+
+| data       | flusso  | descrizione           |
+| ---------- | ------- | --------------------- |
+| 07/09/2023 | -10.000 | acquisto obbligazione |
+| 07/09/2023 | 300     | cedola annuale        |
+| 07/09/2024 | 300     | cedola annuale        |
+| 07/09/2025 | 300     | cedola annuale        |
+| 07/09/2026 | 300     | cedola annuale        |
+| 07/09/2027 | 300     | cedola annuale        |
+| 07/09/2028 | 10.300  | rimborso del capitale |
+
+
+
+
+
+
+
+
 
 
 
