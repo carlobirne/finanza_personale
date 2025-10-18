@@ -1,4 +1,4 @@
-(Riassunto da serie video YT e relativa dispensa corso omonimo [[DispensaEducatiFinanziati.pdf]])
+(*Riassuntazzo* con approfondimenti qua e là a partire da serie video YT e relativa dispensa corso omonimo [[DispensaEducatiFinanziati.pdf]])
 
 ## Strategia di investimento a quattro pilastri
 
@@ -287,21 +287,100 @@ I rendimenti sono quindi equivalenti, tuttavia il TIR è maggiore nel secondo ca
 
 
 ## Spese prevedibili a medio termine. Le obbligazioni
-Queste spese sono tutte quelle che intercorrono tra 1 e 10 anni e che sono prevedibili e vanno nel terzo pilastro. Tutti questi casi riguardano spese prevedibili e per le quali possiamo decidere di allocare dei soldi oggi in modo da arrivare tra un certo numero di anni ad avere i soldi che ci serviranno, con qualche interesse. Lo strumento migliore per fare questo tipo di operazioni sono (a marzo 2024) le **obbligazioni**. Un’obbligazione (o bond) è un titolo di credito che conferisce al possessore il diritto di ricevere un rimborso del capitale nominale alla scadenza del prestito obbligazionario e in aggiunta una remunerazione a titolo di interesse solitamente sotto forma di cedole periodiche. Colui che riceve il denaro inizialmente si impegna a restituirlo alla scadenza del periodo dell’obbligazione e di pagare delle cedole periodiche al creditore. Solitamente le obbligazioni sono emesse dagli stati o da soggetti privati (banche, società, ecc.) e possiamo comprarle tutti.
+Queste spese sono tutte quelle che intercorrono tra 1 e 10 anni e che sono prevedibili e vanno nel terzo pilastro. Tutti questi casi riguardano spese prevedibili e per le quali possiamo decidere di allocare dei soldi oggi in modo da arrivare tra un certo numero di anni ad avere i soldi che ci serviranno, con qualche interesse.
+Lo strumento migliore per fare questo tipo di operazioni sono (a marzo 2024) le **obbligazioni**. 
+
+> [!Obbligazione]
+> Un’obbligazione (o *bond*) è un titolo di credito che conferisce al possessore il diritto di ricevere un rimborso del capitale nominale alla scadenza del prestito obbligazionario e in aggiunta una remunerazione a titolo di interesse solitamente sotto forma di cedole periodiche. 
+
+Colui che riceve il denaro inizialmente si impegna a restituirlo alla scadenza del periodo dell’obbligazione e di pagare delle cedole periodiche al creditore. Solitamente le obbligazioni sono emesse dagli stati o da soggetti privati (banche, società, ecc.) e possiamo comprarle tutti.
 
 Il rischio più significativo associato all’acquisto di un’obbligazione è la possibilità che l’emittente non rimborsi l’importo prestato dall’investitore. Nel caso di obbligazioni aziendali, il rischio è il fallimento dell’azienda emittente, mentre nel caso di titoli di stato il rischio è che lo stato non onori il proprio debito o decida di non rimborsare gli investitori a causa di cambiamenti legislativi, scelte politiche o sparizione dello stato per eventi geopolitici (eventi che rimangono rari nel caso degli stati, come si intuisce).
 
 L'obbligazione più semplice o *plain vanilla* si struttura come nell'esempio sotto:
 
-| data       | flusso  | descrizione           |
-| ---------- | ------- | --------------------- |
-| 07/09/2023 | -10.000 | acquisto obbligazione |
-| 07/09/2023 | 300     | cedola annuale        |
-| 07/09/2024 | 300     | cedola annuale        |
-| 07/09/2025 | 300     | cedola annuale        |
-| 07/09/2026 | 300     | cedola annuale        |
-| 07/09/2027 | 300     | cedola annuale        |
-| 07/09/2028 | 10.300  | rimborso del capitale |
+| data       | flusso  | descrizione                           |
+| ---------- | ------- | ------------------------------------- |
+| 07/09/2023 | -10.000 | acquisto obbligazione                 |
+| 07/09/2023 | 300     | cedola annuale                        |
+| 07/09/2024 | 300     | cedola annuale                        |
+| 07/09/2025 | 300     | cedola annuale                        |
+| 07/09/2026 | 300     | cedola annuale                        |
+| 07/09/2027 | 300     | cedola annuale                        |
+| 07/09/2028 | 10.300  | rimborso del capitale + cedola finale |
+Nell’esempio fornito, abbiamo acquistato un’obbligazione a 10.000 € il 7 settembre 2023. Riceviamo cedole annuali pari al 3% dell’investimento iniziale e, dopo 5 anni dall’acquisto, ci vengono restituiti i 10.000 € iniziali insieme all’ultima cedola. Dichiarare di aver guadagnato 1.500 € dall’obbligazione è un’asserzione approssimativa. Questo perché il meccanismo delle cedole prevede il ricevimento di pagamenti regolari a intervalli prefissati (ad esempio, ogni anno) e non tutti in una volta. Ricevere i 1.500 € inizialmente il 7 settembre 2023 sarebbe stato più vantaggioso rispetto a riceverli tutti insieme il 7 settembre 2028, a condizione che gli investitori possano reinvestire prontamente tali fondi in opportunità di investimento redditizie. Viceversa, se avessimo ricevuto l’importo iniziale e l’ultima cedola insieme alla scadenza, ci sarebbe stata una minor possibilità di sfruttare il potenziale rendimento dei fondi nel periodo intermedio.
+Per misurare quanto effettivamente un’obbligazione possa rendere, utilizziamo nuovamente il tasso interno di rendimento (TIR), facilmente calcolabile in Excel con la funzione TIR.X() (XIRR() in inglese). In questo caso è praticamente il 3 % (in effetti si staccano cedole annuale che sono esattamente il 3 % del capitale nominale).
+![[TIR obbligazione es.png]]]
+Non tutte le obbligazioni funzionano in questo modo. È possibile, ad esempio, che la cedola non sia fissa, o che il valore di rimborso non sia esattamente pari al prezzo di acquisto. Solitamente le obbligazioni sono quotate su “base 100”, vale a dire che ci si riferisce al valore 100 per indicare i parametri dell’obbligazione. Quindi l'obbligazione precedente si può riscrivere come
+
+| data       | flusso | descrizione                           |
+| ---------- | ------ | ------------------------------------- |
+| 07/09/2023 | -100   | acquisto obbligazione                 |
+| 07/09/2023 | 3      | cedola annuale                        |
+| 07/09/2024 | 3      | cedola annuale                        |
+| 07/09/2025 | 3      | cedola annuale                        |
+| 07/09/2026 | 3      | cedola annuale                        |
+| 07/09/2027 | 3      | cedola annuale                        |
+| 07/09/2028 | 103    | rimborso del capitale + cedola finale |
+Le **obbligazioni step up** hanno cedole che incrementano nel tempo (tasso variabile predeterminato). Si noti la differenza tra una plain vanilla e una step up apparentemente uguali nel rendimento.
+Plain vanilla:
+
+| data       | flusso  | descrizione                           |
+| ---------- | ------- | ------------------------------------- |
+| 07/09/2023 | -100    | acquisto obbligazione                 |
+| 07/09/2024 | 3       | cedola annuale                        |
+| 07/09/2025 | 3       | cedola annuale                        |
+| 07/09/2026 | 3       | cedola annuale                        |
+| 07/09/2027 | 3       | cedola annuale                        |
+| 07/09/2028 | 103     | rimborso del capitale + cedola finale |
+|            | ==**TIR**== | ==2,9967%==                               |
+Step up:
+
+| data       | flusso      | descrizione                           |
+| ---------- | ----------- | ------------------------------------- |
+| 07/09/2023 | -100        | acquisto obbligazione                 |
+| 07/09/2024 | 2,0         | cedola annuale                        |
+| 07/09/2025 | 2,5         | cedola annuale                        |
+| 07/09/2026 | 3,0         | cedola annuale                        |
+| 07/09/2027 | 3,5         | cedola annuale                        |
+| 07/09/2028 | 104         | rimborso del capitale + cedola finale |
+|            | ==**TIR**== | ==2,9674%==                           |
+Ci sono anche le **obbligazioni “zero coupon”**, cioè a cedola zero. Ovviamente essere non vengono collocate allo stesso prezzo del rimborso ma a meno di 100, ad esempio 90, 87, ecc.
+
+| data       | flusso  | descrizione                                   |
+| ---------- | ------- | --------------------------------------------- |
+| 07/09/2023 | -90     | acquisto obbligazione                         |
+| 07/09/2024 | 0       | cedola annuale                                |
+| 07/09/2025 | 0       | cedola annuale                                |
+| 07/09/2026 | 0       | cedola annuale                                |
+| 07/09/2027 | 0       | cedola annuale                                |
+| 07/09/2028 | 100     | rimborso del capitale + cedola finale (nulla) |
+|            | **TIR** | 2,1272%                                       |
+
+Per esempio i BOT sono zero coupon. Ad esempio uno a 6 mesi con costo iniziale di 98 euro e rimborso pari a 100 euro ha un TIR elevato
+
+| **data**   | **flusso** | **descrizione**                               |
+| ---------- | ---------- | --------------------------------------------- |
+| 07/09/2023 | -98        | acquisto obbligazione                         |
+| 07/03/2024 | 100        | rimborso del capitale + cedola finale (nulla) |
+|            | **TIR**    | 4,1348%                                       |
+*(da sistemare)* Tassazione sulle obbligazioni: Le obbligazioni sono tassate sia sulle cedole sia sulla differenza tra emissione e rimborso. Normalmente l’aliquota è il 26%, tranne per le obbligazioni di enti sovranazionali o di stati che non siano paradisi fiscali, che sono tassate al 12,5%. Come prima scelta conviene sempre cercare di comprare obbligazioni con tassazioni più basse. Nel caso dell’esempio qui sopra avremo un tasso netto pari a: TIR lordo pari al 4.13% TIR netto se titolo di stato 12.5% di tasse 3,64% se titolo privato 26% di tasse 3,06% Ci sono tantissime altre varianti nelle obbligazioni, esempi di obbligazioni da evitare per investitori alle prime armi: - obbligazioni con opzione call, per la quale, a discrezione dell’emittente, è possibile ritirare l’obbligazione in anticipo. Ad esempio, se i tassi di mercato dovessero diminuire, l’emittente potrebbe chiedere prestiti a interessi più bassi, con ovvia convenienza dello stesso (sono indicate di solito con CALL, o CLL, o CL) e quindi eserciterebbe l’opzione costringendoci a reinvestire i soldi a tassi più bassi; - obbligazioni convertibili, che, quando arrivano a scadenza, invece di ridarci i soldi, convertono l’ammontare in un quantitativo prestabilito di azioni dell’azienda stessa; - obbligazioni non quotate, obbligazioni cioè non vendibili durante il periodo di validità delle stesse. Normalmente, infatti, è possibile rivendere le obbligazioni, che prendono il nome di quotate.
+
+(manca l'8.1)
+
+## Come acquistare obbligazioni
+
+In questo capitolo andremo a vedere la parte pratica delle obbligazioni, vedremo come scegliere le obbligazioni e come acquistarle presso un intermediario. In primo luogo, la scelta delle obbligazioni: per poter scegliere delle obbligazioni, anzitutto è necessario avere una lista delle obbligazioni tra cui scegliere. Per questo motivo è molto utile il sito di Matteoooo: [Simple tools for investors](https://www.simpletoolsforinvestors.eu/index.shtml) che riporta esattamente quello che il suo nome dichiara, cioè strumenti semplici per investitori, soprattutto investitori alle prime armi.
+
+Il sito è organizzato in diverse sezioni: - Bond tools – Monitors, contiene una serie di informazioni (prezzo, yield, spread, serie storiche) relative ad un insieme predefinito di obbligazioni quotate su Borsa Italiana. I dati sono calcolati giornalmente; - Bond tools - Yield table, contiene tutti i dati contenuti nei monitor riportati in un’unica tabella; - Bond tools - Bond calculator, permette di calcolare il rendimento dei titoli plain vanilla (zero coupon o con cedole fisse). Questo strumento calcola il rendimento lordo, netto, supernetto, controvalore di acquisto, duration e visualizza i flussi di cassa attesi; - Bond tools - Minus-eater, riporta una lista di obbligazioni che permettono di ottimizzare la compensazione delle minusvalenze; - Market Values, è un add-in per Excel che permette di recuperare i dati di borsa da diversi provider (siti web generalmente); - Documenti e downloads, contiene della documentazione relativa alle formule di calcolo utilizzate negli strumenti ed alcune risorse scaricabili. I monitors sono classificati per enti sovranazionali, governativi, bancari, corporate e generici. In generale nei monitors è riportato un grafico con nelle ascisse la durata e nelle ordinate il rendimento lordo. All’interno del grafico sono presenti le diverse obbligazioni con rendimenti e scadenze. In riferimento alla Figura 4, si faccia riferimento al glossario del sito: Guida ai dati presenti nei monitor. In particolare: - in info si trovano informazioni specifiche sull’obbligazione selezionata, anche i flussi di cassa; - lotto minimo: è il minimo valore scambiabile nella valuta del bond; - MOT = Mercato Obbligazionario Telematico; - Il prezzo (che dice poco di per sé, meglio controllare lo yield); - Yield = interesse annuo. All’interno del sito è possibile filtrare per data di scadenza, rendimento ecc. Per quanto riguarda in cosa investire, ricordiamo di non investire solo in titoli di stato italiani. Sarebbe meglio cercare di diversificare gli emittenti, a meno di non avere un terzo pilastro veramente piccolo, sotto i 10.000 €. Inoltre, solitamente è buona norma non andare oltre i 10 anni di durata. Andare oltre è utilizzato solo come modo per speculare sui tassi, aspettando che i tassi scendano parecchio per vendere parecchio in positivo.
+
+
+
+
+
+
+
+
 
 
 

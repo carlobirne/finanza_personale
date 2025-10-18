@@ -15,7 +15,7 @@ Per gli italiani, è **imprescindibile investire i propri soldi** a causa di div
 4. **Salari Stagnanti**: In Italia, i salari crescono poco e meno rispetto ad altri paesi del G7 o dell'Unione Europea, compromettendo la prosperità finanziaria
 
 ### L'interesse composto
-(vedi [[Educati e finanziati (P. Coletti)#Matematica finanziaria di base]])
+(vedi [[Educati e finanziati#Matematica finanziaria di base]])
 Gli interessi guadagnati (rendimento) non vengono prelevati, ma possono essere reinvestiti, e negli anni successivi, l'interesse si applica sulla somma iniziale più gli interessi maturati in precedenza. Questo porta a una crescita esponenziale del capitale nel lungo termine.
 
 *Esempio*: Un investimento iniziale di €10.000 con un rendimento medio del 5% annuo, lasciato per 40 anni, può trasformarsi in oltre €70.000. Se si aggiungono €100 al mese, la somma totale investita (€10.000 iniziali + €48.000 aggiunti) può diventare oltre €226.000
